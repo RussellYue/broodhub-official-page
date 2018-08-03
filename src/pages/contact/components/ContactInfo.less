@@ -1,0 +1,45 @@
+@import '../../../constants.less';
+.contactInfo{
+    // display: block;
+    // height: calc(~"100vh - 60px");
+    
+
+    & .broodHubContact{
+       & .title{
+           font-size: @font-size-large;
+       }
+       & .subtitle {
+            margin-top: 15px;
+       }
+       & .item {
+           margin-top: 20px;
+            & span {
+                padding-left: 20px;
+                color:@link-color-hover;
+            }
+       }
+    }
+    & .form{
+        padding-top: 50px;
+        & .title{
+            font-size: @font-size-large;
+        }
+        & .subtitle {
+             margin-top: 15px;
+        }
+     }
+}
+
+@media only screen and (min-width: 768px) {
+    .contactInfo{
+        & .broodHubContact{
+            padding-top: 50px;
+            padding-left: 30px;
+            padding-right: 30px;
+         }
+         & .form{
+            padding-left: 30px;
+            padding-right: 30px;
+         }
+    }
+}

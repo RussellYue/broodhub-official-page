@@ -1,0 +1,30 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "umi dev",
+    "build": "umi build",
+    "lint": "eslint --ext .js src test",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "dva": "^2.1.0",
+    "enquire.js": "^2.1.6",
+    "path": "^0.12.7",
+    "rc-banner-anim": "^1.0.1",
+    "rc-queue-anim": "^1.4.1",
+    "rc-scroll-anim": "^2.3.3",
+    "rc-tween-one": "^1.7.3",
+    "umi": "^1.0.0-0",
+    "umi-plugin-dva": "^0.1.5"
+  },
+  "devDependencies": {
+    "eslint": "^4.14.0",
+    "eslint-config-umi": "^0.1.1",
+    "eslint-plugin-flowtype": "^2.34.1",
+    "eslint-plugin-import": "^2.6.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.1.0",
+    "express": "^4.16.3",
+    "husky": "^0.12.0"
+  }
+}

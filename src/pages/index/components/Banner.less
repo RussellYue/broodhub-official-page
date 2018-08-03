@@ -1,0 +1,45 @@
+@import '../../../constants.less';
+.banner{
+    display: block;
+    height: calc(~"100vh - 60px");
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),url("https://images.pexels.com/photos/374018/pexels-photo-374018.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-size: cover; 
+    background-position: center;
+    width: 100vw;
+    overflow: hidden;
+    & .content{
+        width: 100vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        & .slogon{
+            font-size: @font-size-extra-large;
+            &:hover{
+                color:@link-color-hover;
+            }
+        }
+        & .button{
+            font-size: @font-size-medium;
+            margin:auto;
+            position: relative;
+            top: 30px;
+            &:hover{
+                background-color:@primary !important;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .banner{
+        height: calc(~"100vh - 100px");
+        & .content{
+            width: 576px;
+        }
+    }
+}
